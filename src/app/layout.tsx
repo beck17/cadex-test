@@ -14,7 +14,7 @@ export const metadata = {
     openGraph: {
         title: 'Cadex Test Project',
         description: 'Frontend project built with React 19, Next.js 15 and Stitches.',
-        // url: 'https://your-vercel-deployment-url.com',
+        url: 'https://cadex-test-gold.vercel.app',
         siteName: 'Cadex Test',
         images: [
             {

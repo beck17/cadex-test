@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cadex Test Project
 
-## Getting Started
+Тестовый проект разработанный для выполнения задания от Cadex.
 
-First, run the development server:
+---
+
+## Стек технологий
+
+- React 19
+- Next.js 15 (App Router, Vite, Turbopack)
+- Ant Design 5 (компоненты интерфейса)
+- React Hook Form + Yup (управление формами и валидация)
+- Stitches (CSS-in-JS библиотека для стилизации)
+- TypeScript
+
+---
+
+## Основной функционал
+
+- Полностью адаптивный дизайн
+- Гидрация компонентов на клиенте
+- Валидация формы через React Hook Form + Yup
+- SEO-оптимизация (мета-теги + Open Graph)
+- Ленивая загрузка YouTube-видео для повышения скорости
+- Чистая архитектура проекта
+- Темная цветовая схема
+
+---
+
+## Инструкция по установке
+
+1. **Клонировать репозиторий:**
+
+```bash
+git clone https://github.com/beck17/cadex-test.git
+cd cadex-test
+```
+
+2. **Установка зависимостей:**
+
+```bash
+npm install
+```
+
+3. **Запустить локальный сервер:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Собрать проект**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Для деплоя на Vercel
 
-## Learn More
+- Подключите репозиторий GitHub
+- Выберите фреймворк “Next.js”
+- Нажмите “Deploy”
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Особенности стилизации
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Все стили написаны с помощью Stitches — безопасные по типизации.
+- Используется централизованная тема: primary — #0f172a, accent — #6366f1.
+- Глобальные стили и токены темы для цветов и шрифтов.
+- Строгое соблюдение адаптивности для мобильных устройств.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## SEO-оптимизация
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Используются встроенные метаданные (export const metadata) в Next.js 15.
+- Следование правильной иерархии заголовков (h1 > h2 > h3).
+- Реализована поддержка Open Graph
+
+---
+
+## Оптимизация производительности
+
+- Ленивая загрузка YouTube через библиотеку react-lite-youtube-embed.
+- Минимизация лишнего кода за счёт Turbopack и Vite.
