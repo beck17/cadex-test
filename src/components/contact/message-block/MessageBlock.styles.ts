@@ -19,6 +19,7 @@ export const MessageBlockStyles = {
     Text: styled('p', {
         fontSize: '18px',
         color: '$muted',
+        marginBottom: '32px',
     }),
 
 }
