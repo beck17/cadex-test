@@ -1,4 +1,4 @@
-import {styled} from "@/styles/stitches";
+import {styled} from "@/styles/stitches.config";
 
 export const LayoutStyles = {
     Wrapper: styled('div', {

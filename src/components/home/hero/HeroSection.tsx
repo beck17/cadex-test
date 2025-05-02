@@ -1,10 +1,7 @@
-'use client'
-
 import {FC} from "react";
-import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 
 import {HeroSectionStyles} from "@/components/home/hero/HeroSection.styles";
-import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
+import {Video} from "@/components/ui/video/Video";
 
 
 export const HeroSection: FC = () => {
@@ -15,10 +12,7 @@ export const HeroSection: FC = () => {
                 <HeroSectionStyles.Text>This is a demo site with Next.js, Stitches, AntDesign</HeroSectionStyles.Text>
             </HeroSectionStyles.Left>
             <HeroSectionStyles.Right>
-                <LiteYouTubeEmbed
-                    id='dQw4w9WgXcQ'
-                    title='Never Gonna Give You Up'
-                />
+                <Video/>
             </HeroSectionStyles.Right>
         </HeroSectionStyles.Section>
     )

@@ -1,4 +1,4 @@
-import {styled} from "@/styles/stitches";
+import {styled} from "@/styles/stitches.config";
 
 export const CtaSectionStyles = {
     Section: styled('section', {

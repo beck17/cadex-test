@@ -1,4 +1,4 @@
-import { styled } from '@/styles/stitches'
+import { styled } from '@/styles/stitches.config'
 import Link from 'next/link'
 
 export const StackSectionStyles = {

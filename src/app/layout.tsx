@@ -2,6 +2,7 @@ import {Nunito} from "next/font/google";
 import {ConfigProvider} from "antd";
 
 import {Layout} from "@/components/layout/layout/Layout";
+import {getCssText} from "@/styles/stitches.config";
 
 
 export const metadata = {
@@ -45,9 +46,16 @@ export default function RootLayout({
                                        children,
                                    }: Readonly<{
     children: React.ReactNode;
+
 }>) {
     return (
         <html lang="en">
+        <head>
+            <style
+                id="stitches"
+                dangerouslySetInnerHTML={{__html: getCssText()}}
+            />
+        </head>
         <body className={nunito.className}>
         <ConfigProvider>
             <Layout>

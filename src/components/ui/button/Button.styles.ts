@@ -1,4 +1,4 @@
-import {styled} from "@/styles/stitches";
+import {styled} from "@/styles/stitches.config";
 
 export const ButtonStyles = {
     Btn: styled('p', {
